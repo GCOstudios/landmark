@@ -1,0 +1,2 @@
+# landmark
+Child WordPress theme
