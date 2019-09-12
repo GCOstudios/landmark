@@ -1,2 +1,2 @@
-# landmark
-Child WordPress theme
+# Landmark Partners
+Custom child WordPress theme
