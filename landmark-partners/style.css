@@ -5,7 +5,7 @@ Description:     Landmark Partnership
 Author:          Jay Roberts
 Author URI:      http://skyhaven.co.uk/
 Template:        virtue_premium
-Version:         1.0.0
+Version:         1.0.1
 Text Domain:     landmark-partners
 */
 
@@ -566,6 +566,33 @@ section.gradient {
     border-bottom: 20px solid #f7f7f7;
     z-index: 10;
 }
+
+.home .sliderclass {
+  border-top: 0;
+}
+
+.slick-slide .rpc-box {
+  min-height: auto;
+  padding: 2rem;
+}
+
+.slick-slide .rpc-box .rpc-post-image {
+  margin-bottom: 2rem;
+}
+
+.slick-slide .rpc-box .rpc-content {
+  position: static;
+}
+
+.home .twitter-box {
+  background-position: 98% 20px;
+  padding: 4rem 2rem;
+}
+
+.home .twitter-box .twitter-title {
+  margin-bottom: 20px;
+}
+
 #carousel-81 .rpc-bg {
     background-color: #fff;
     border-bottom: 2px solid #15314c;
@@ -1119,7 +1146,7 @@ button.epl-button.epl-external-link {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.epl-paginate-default-wrapper.epl-clearfix .alignright a:hover, ..epl-paginate-default-wrapper.epl-clearfix .alignright a:focus, .epl-paginate-default-wrapper.epl-clearfix .alignright a:active {
+.epl-paginate-default-wrapper.epl-clearfix .alignright a:hover, .epl-paginate-default-wrapper.epl-clearfix .alignright a:focus, .epl-paginate-default-wrapper.epl-clearfix .alignright a:active {
     color: white;
 }
 .epl-paginate-default-wrapper.epl-clearfix .alignright a:hover:before, .epl-paginate-default-wrapper.epl-clearfix .alignright a:focus:before, .epl-paginate-default-wrapper.epl-clearfix .alignright a:active:before {
