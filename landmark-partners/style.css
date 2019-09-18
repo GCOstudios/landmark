@@ -571,6 +571,22 @@ section.gradient {
   border-top: 0;
 }
 
+.home .responsive-carousel .slick-slider {
+  padding: 0 8rem;
+}
+
+.home .responsive-carousel .slick-slider .slick-prev {
+  left: 25px;
+}
+
+.home .responsive-carousel .slick-slider .slick-next {
+  right: 25px;
+}
+
+.responsive-carousel .slick-track {
+  display: flex;
+}
+
 .slick-slide .rpc-box {
   min-height: auto;
   padding: 2rem;
@@ -1479,12 +1495,12 @@ button.epl-button.epl-external-link {
         padding-top: 0px;
     }
     .slick-prev {
-        left: 0!important;
+        /* left: 0!important; */
         z-index: 100000;
         width: 30px!important;
     }
     .slick-next {
-        right: 0!important;
+        /* right: 0!important; */
         z-index: 100000;
         width: 30px!important;
     }
