@@ -583,8 +583,8 @@ section.gradient {
   right: 25px;
 }
 
-.responsive-carousel .slick-track {
-  display: flex;
+.home .responsive-carousel .slick-track {
+  display: flex!important;
 }
 
 .slick-slide .rpc-box {
