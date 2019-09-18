@@ -587,6 +587,10 @@ section.gradient {
   display: flex!important;
 }
 
+.home .responsive-carousel .slick-slide {
+  height: auto;
+}
+
 .slick-slide .rpc-box {
   min-height: auto;
   padding: 2rem;
