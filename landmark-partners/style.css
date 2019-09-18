@@ -591,6 +591,10 @@ section.gradient {
   height: auto;
 }
 
+.home .responsive-carousel .slick-slide .fixed-height-image {
+  height: 200px;
+}
+
 .home .responsive-carousel .slick-slide .rpc-box {
   height: 100%;
 }
