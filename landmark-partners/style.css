@@ -592,7 +592,7 @@ section.gradient {
 }
 
 .home .responsive-carousel .slick-slide .fixed-height-image {
-  height: 200px;
+  height: 200px!important;
 }
 
 .home .responsive-carousel .slick-slide .rpc-box {
@@ -885,9 +885,13 @@ section#staff {
     float: left;
 }
 .entry-content.loop-content.epl-template-default {
-    background: #e2e3e4;
-    padding: 10px 20px 20px 10px;
-    margin: -1px;
+  background: #e2e3e4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 8rem;
+  /* padding: 10px 20px 20px 10px;
+  margin: -1px; */
 }
 .epl-tab-content h3.secondary-heading {
     display: none;
