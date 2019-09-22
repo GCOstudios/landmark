@@ -886,12 +886,14 @@ section#staff {
     float: left;
 }
 .entry-content.loop-content.epl-template-default {
-  background: #e2e3e4;
+  /* background: #e2e3e4; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1170px;
-  padding: 0 8rem;
+  padding: 2rem 8rem 0;
   /* padding: 10px 20px 20px 10px;
   margin: -1px; */
 }
