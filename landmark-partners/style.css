@@ -733,7 +733,9 @@ h4.archive-title.loop-title {
 }
 .epl-property-blog.epl-listing-grid-view .property-box-right, .epl-property-blog.epl-listing-grid-view-forced .property-box-right {
     min-height: 180px;
+    min-height: auto;
     border-bottom: 4px solid #15324c;
+    padding: 1rem 2rem;
     position: relative;
 }
 .epl-search-forms-wrapper.epl-search-default {
