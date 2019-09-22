@@ -722,7 +722,8 @@ h4.archive-title.loop-title {
     display: none;
 }
 .epl-archive-utility-wrapper {
-    margin: 0px!important;
+  width: 100%;
+    /* margin: 0px!important; */
 }
 .epl-property-blog.epl-listing-grid-view .price {
     position: absolute;
