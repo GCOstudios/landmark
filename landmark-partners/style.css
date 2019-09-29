@@ -752,6 +752,11 @@ h4.archive-title.loop-title {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+.epl-stickers-wrapper {
+  top: 0;
+}
+
 .epl-archive-entry-image {
     background: #000;
     -webkit-transition: all 0.3s ease-in-out;
