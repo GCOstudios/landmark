@@ -1512,9 +1512,9 @@ button.epl-button.epl-external-link {
     top: 0!important;
     height: 125px!important;
 }*/
-    .container {
+    /* .container {
         width: 95%;
-    }
+    } */
     #topcontrol>div:hover {
         background: rgb(192, 157, 111);
     }
