@@ -772,7 +772,7 @@ h4.archive-title.loop-title {
 .epl-author-image img {
     margin: 0;
     height: auto;
-    width: 50%;
+    /* width: 100%; */
 }
 .epl-tab-title {
     border-bottom: 1px solid #ccc;
