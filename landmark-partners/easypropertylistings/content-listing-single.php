@@ -127,7 +127,7 @@
 			</div>
 			<?php do_action('epl_property_tab_section_after'); ?>
 
-			<h4>Property Gallery</h4>
+			<!-- <h4>Property Gallery</h4> -->
 			<?php do_action( 'epl_property_gallery' ); ?>
 
 			<?php do_action( 'epl_single_extensions' ); ?>
