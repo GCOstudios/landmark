@@ -30,7 +30,7 @@ get_header(); ?>
 
 	<div class="container">
    		<div class="row">
-	      	<div class="main col-lg-8 col-md-8" id="ktmain" role="main">
+	      	<div class="main col-lg-9 col-md-9" id="ktmain" role="main">
                 <article class="entry-content" itemprop="mainContentOfPage">
 
 							<?php
@@ -50,7 +50,7 @@ get_header(); ?>
 						</article>
 					</div>
 						<?php if ( is_active_sidebar( 'single-property' ) ) : ?>
-							<aside id="ktsidebar" class="col-lg-4 col-md-4 kad-sidebar" role="complementary">
+							<aside id="ktsidebar" class="col-lg-3 col-md-3 kad-sidebar" role="complementary">
         				<div class="sidebar">
            				 <?php dynamic_sidebar( 'single-property' ); ?>
            				 <hr>
