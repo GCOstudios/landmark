@@ -704,6 +704,8 @@ span.item-suburb, span.item-city, span.item-state, span.item-pcode, span.item-co
 }
 .epl-property-single .slick-slider img {
   width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 .epl-property-blog .entry-title a {
     text-decoration: none;
