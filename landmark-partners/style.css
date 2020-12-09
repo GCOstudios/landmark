@@ -1431,6 +1431,10 @@ button.epl-button.epl-external-link {
     }
 }
 
+.epl-property-blog.epl-listing-grid-view, .epl-property-blog.epl-listing-grid-view-forced {
+  width: 100%;
+}
+
 /*media queries */
 
 @media (min-width: 100px) {
