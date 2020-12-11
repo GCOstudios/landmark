@@ -1,8 +1,11 @@
 <?php 
-	 add_action( 'wp_enqueue_scripts', 'landmark_partners_enqueue_styles' );
-	 function landmark_partners_enqueue_styles() {
- 		  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
- 		  } 
+add_action( 'wp_enqueue_scripts', 'landmark_partners_enqueue_styles' );
+
+function landmark_partners_enqueue_styles() {
+  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+  wp_enqueue_style( 'child-style',  get_stylesheet_uri(), array('parent-style'));
+}
+
 add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
  
 function my_custom_dashboard_widgets() {
@@ -254,7 +257,7 @@ function epl_switch_views_sorting2() {
 	<?php
 	do_action('epl_archive_utility_wrap_end');
 }
-add_action( 'epl_property_loop_start2' , 'epl_switch_views_sorting2' , 20 );
+// add_action( 'epl_property_loop_start2' , 'epl_switch_views_sorting2' , 20 );
 
 function my_epl_listing_sort_status( $query ) {
     // Do nothing if in dashboard or not an archive page
