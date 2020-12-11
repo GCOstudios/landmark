@@ -28,7 +28,6 @@ global $property;
 			<div class="property-box property-box-right property-content">
 				<!-- Heading -->
 				<h3 class="entry-title"><a href="<?php the_permalink() ?>"><?php do_action('epl_property_heading'); ?></a></h3>
-					
 				
 				<!-- Address -->
 			<!-- 	<div class="property-address">
