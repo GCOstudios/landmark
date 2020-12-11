@@ -7,13 +7,14 @@
         include kadence_template_path(); 
         ?>
         
-      <?php if ( virtue_display_sidebar() ) : ?>
-      <aside id="ktsidebar" class="<?php echo esc_attr( virtue_sidebar_class() ); ?> kad-sidebar" role="complementary">
-        <div class="sidebar">
-          <?php include kadence_sidebar_path(); ?>
-        </div><!-- /.sidebar -->
-      </aside><!-- /aside -->
-      <?php endif; ?>
+      <!-- this section disabled to prevent it from showing on archive pages -->
+      <?php // if ( virtue_display_sidebar() ) : ?>
+      <!-- <aside id="ktsidebar" class="<?php // echo esc_attr( virtue_sidebar_class() ); ?> kad-sidebar" role="complementary">
+        <div class="sidebar"> -->
+          <?php //  include kadence_sidebar_path(); ?>
+        <!-- </div> .sidebar -->
+      <!-- </aside> .aside -->
+      <?php // endif; ?>
       </div><!-- /.row-->
       <?php do_action( 'kt_after_content' ); ?>
     </div><!-- /.content -->
