@@ -42,7 +42,7 @@ global $property;
 					<?php do_action('epl_property_icons'); ?>
         </div>
         <div class="cta-buttons">
-          <a href="">Contact Us</a>
+          <a class="cta-btn" href="https://thelandmarkpartnership.com/contact-us/">Contact Us</a>
         </div>
 			</div>
 		<?php do_action('epl_property_after_content'); ?>
