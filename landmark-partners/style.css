@@ -64,6 +64,9 @@ hr {
   margin-top: 30px;
   display: none;
 }
+.archive .contentclass {
+  background: white;
+}
 .homecontent.clearfix.home-margin {
   margin: 0% 6%;
 }
@@ -691,6 +694,10 @@ span.item-suburb, span.item-city, span.item-state, span.item-pcode, span.item-co
   background: #ffffff;
   box-shadow: 0 0 3px #ccc;
 }
+.epl-property-blog .epl-property-blog-entry-wrapper {
+  background: #f8f8f8;
+  box-shadow: none;
+}
 .epl-author-box-container {
   margin: 1em 0;
   display: none;
@@ -711,7 +718,7 @@ object-fit: cover;
   text-decoration: none;
   font-family: proxima_novabold;
   letter-spacing: 0px;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 1;
   text-transform: uppercase;
   color: #081f33;
@@ -736,6 +743,23 @@ width: 100%;
   bottom: 0; */
   margin: 0em;
   line-height: 0.8;
+}
+.epl-property-blog .price {
+  background-color: #122c45;
+  border-top: 1px solid #f8f8f8;
+  color: white;
+  margin: 0;
+  padding: 17px 30px 10px;
+}
+.epl-property-blog .property-box-right {
+  padding: 70px 50px 0;
+}
+.epl-property-blog .property-box-left {
+  max-width: 470px;
+}
+.epl-property-blog .property-address {
+  font-size: 18px;
+  line-height: 1.3;
 }
 .epl-property-blog.epl-listing-grid-view .property-box-right, .epl-property-blog.epl-listing-grid-view-forced .property-box-right {
   min-height: 180px;
@@ -908,8 +932,9 @@ flex-flow: row wrap;
 justify-content: space-between;
 margin-left: auto;
 margin-right: auto;
-max-width: 1170px;
+max-width: 1180px;
 padding: 2rem 8rem 0;
+padding: 100px 1rem 0;
 /* padding: 10px 20px 20px 10px;
 margin: -1px; */
 }
@@ -1616,7 +1641,7 @@ button.epl-button.epl-external-link {
   }
   .epl-property-blog .epl-property-blog-entry-wrapper {
       margin: 4px!important;
-      background: #ffffff;
+      background: #f8f8f8;
       box-shadow: 0 0 3px #ccc;
   }
 }
