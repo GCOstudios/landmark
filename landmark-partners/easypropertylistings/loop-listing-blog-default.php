@@ -22,6 +22,10 @@ global $property;
 					<?php do_action('epl_property_archive_featured_image'); ?>
 					<!-- Home Open -->
 					<?php do_action('epl_property_inspection_times'); ?>
+          <!-- Price -->
+          <div class="price">
+            <?php do_action('epl_property_price'); ?>
+          </div>
 				</div>
 			<?php endif; ?>
 
@@ -30,19 +34,16 @@ global $property;
 				<h3 class="entry-title"><a href="<?php the_permalink() ?>"><?php do_action('epl_property_heading'); ?></a></h3>
 				
 				<!-- Address -->
-			<!-- 	<div class="property-address">
-					<a href="<?php the_permalink(); ?>">
-						<?php do_action('epl_property_address'); ?>
-					</a>
-				</div> -->
+			  <div class="property-address">
+					<?php do_action('epl_property_address'); ?>
+				</div>
 				<!-- Property Featured Icons -->
 				<div class="property-feature-icons">
 					<?php do_action('epl_property_icons'); ?>
-				</div>
-				<!-- Price -->
-				<div class="price">
-					<?php do_action('epl_property_price'); ?>
-				</div>
+        </div>
+        <div class="cta-buttons">
+          <a href="">Contact Us</a>
+        </div>
 			</div>
 		<?php do_action('epl_property_after_content'); ?>
 	</div>
