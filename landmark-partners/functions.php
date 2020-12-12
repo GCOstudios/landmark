@@ -3,7 +3,7 @@ add_action( 'wp_enqueue_scripts', 'landmark_partners_enqueue_styles' );
 
 function landmark_partners_enqueue_styles() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'child-style',  get_stylesheet_uri(), array('parent-style'));
+  // wp_enqueue_style( 'child-style',  get_stylesheet_uri(), array('parent-style'));
 }
 
 add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
@@ -45,6 +45,7 @@ function landmark_scripts() {
     wp_register_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', null, null, true );
     wp_enqueue_script('popper');
     wp_enqueue_script( 'grid', get_stylesheet_directory_uri() . '/assets/jquery.gridder.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/assets/main.js', array( 'jquery' ), '1.0.0', true );
     // wp_enqueue_style( 'bootstrap-4','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
 }
 
@@ -507,7 +508,7 @@ function get_hansel_and_gretel_breadcrumbs()
     }
 
     $breadcrumb_output_link  = '';
-    $breadcrumb_output_link .= '<div class="breadcrumb">';
+    $breadcrumb_output_link .= '<div class="breadcrumb"><div class="breadcrumb-inner">';
     if (    is_home()
          || is_front_page()
     ) {
@@ -524,7 +525,7 @@ function get_hansel_and_gretel_breadcrumbs()
         $breadcrumb_output_link .= $breadcrumb_trail;
         $breadcrumb_output_link .= $page_addon;
     }
-    $breadcrumb_output_link .= '</div><!-- .breadcrumbs -->';
+    $breadcrumb_output_link .= '</div></div><!-- .breadcrumbs -->';
 
     return $breadcrumb_output_link;
 }
