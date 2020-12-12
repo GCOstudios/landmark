@@ -8,7 +8,6 @@
 
     $rightContainer.prepend($topEl);
     $('#topbar').remove();
-    console.log('i initiated');
   }
 
   headerEl();
