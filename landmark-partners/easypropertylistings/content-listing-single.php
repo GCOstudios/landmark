@@ -48,7 +48,7 @@
           * @hooked virtue_single_post_headcontent - 10
           * @hooked virtue_single_post_meta_date - 20
           */
-          do_action( 'kadence_single_post_before_header' );
+          // do_action( 'kadence_single_post_before_header' );
           ?>
           <header>
             <!--  <?php 

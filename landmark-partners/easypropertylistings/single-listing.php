@@ -14,13 +14,14 @@ get_header(); ?>
   <div id="primary" class="site-content content-area epl-single-default <?php echo epl_get_active_theme_name(); ?>">
  	
     <section class="content">
-      <?php if ( is_active_sidebar( 'single-property-banner' ) ) : ?>
+      <?php // if ( is_active_sidebar( 'single-property-banner' ) ) : ?>
         <div id="property-banner">
           <div class="banner-container">
-            <?php dynamic_sidebar( 'single-property-banner' ); ?>
+            <?php // dynamic_sidebar( 'single-property-banner' ); ?>
+            <?php do_action( 'kadence_single_post_before_header' ); ?>
           </div><!-- .banner-container -->
         </div><!-- #property-banner -->
-      <?php endif; ?>
+      <?php // endif; ?>
 
       <?php 
         if(function_exists('get_hansel_and_gretel_breadcrumbs')): 
@@ -52,7 +53,7 @@ get_header(); ?>
             </aside>
 
           <?php endif; ?>
-          
+
           <div class="main col-lg-9 col-md-9" id="ktmain" role="main">
             <article class="entry-content" itemprop="mainContentOfPage">
               <?php if ( have_posts() ) : ?>
