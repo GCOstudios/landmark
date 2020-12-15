@@ -11,35 +11,38 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'epl-listing-single epl-property-single view-expanded' ); ?>>
-			<div class="entry-header epl-header epl-clearfix">
-					<div class="title-meta-wrapper">
-						<div class="entry-col epl-property-details property-details">
-							<?php 
-  global $post, $kt_feat_width, $virtue_premium;
-    if(virtue_display_sidebar()) {
-       $kt_feat_width = apply_filters('kt_blog_full_image_width_sidebar', 848); 
-    } else {
-      $kt_feat_width = apply_filters('kt_blog_full_image_width', 1170); 
-    }
-    $kt_headcontent = get_post_meta( $post->ID, '_kad_blog_head', true );
-    if( 'default' == $kt_headcontent || empty( $kt_headcontent ) ){
-		if( !empty( $virtue_premium['post_head_default'] ) ) {
-			$kt_headcontent = $virtue_premium['post_head_default'];
-		} else {
-			$kt_headcontent = 'none';
-		}
-	}
-    if( $kt_headcontent != 'none' ) {
-		$kt_headcontent_class = 'kt_post_header_content-'.$kt_headcontent;
-    } else {
-		$kt_headcontent_class = 'kt_no_post_header_content';
-    }
-    /**
-    * @hooked virtue_single_post_upper_headcontent - 10
-    */
-    do_action( 'kadence_single_post_begin' ); 
-    ?>
-   <div <?php post_class($kt_headcontent_class); ?>>
+	<div class="entry-header epl-header epl-clearfix">
+		<div class="title-meta-wrapper">
+			<div class="entry-col epl-property-details property-details">
+        <?php 
+          global $post, $kt_feat_width, $virtue_premium;
+            if(virtue_display_sidebar()) {
+              $kt_feat_width = apply_filters('kt_blog_full_image_width_sidebar', 848); 
+            } else {
+              $kt_feat_width = apply_filters('kt_blog_full_image_width', 1170); 
+            }
+
+            $kt_headcontent = get_post_meta( $post->ID, '_kad_blog_head', true );
+
+            if( 'default' == $kt_headcontent || empty( $kt_headcontent ) ){
+              if( !empty( $virtue_premium['post_head_default'] ) ) {
+                $kt_headcontent = $virtue_premium['post_head_default'];
+              } else {
+                $kt_headcontent = 'none';
+              }
+            }
+            if( $kt_headcontent != 'none' ) {
+              $kt_headcontent_class = 'kt_post_header_content-'.$kt_headcontent;
+            } else {
+              $kt_headcontent_class = 'kt_no_post_header_content';
+            }
+            /**
+            * @hooked virtue_single_post_upper_headcontent - 10
+            */
+            do_action( 'kadence_single_post_begin' ); 
+          ?>
+
+        <div <?php post_class($kt_headcontent_class); ?>>
           <?php
           /**
           * @hooked virtue_single_post_headcontent - 10
@@ -47,39 +50,39 @@
           */
           do_action( 'kadence_single_post_before_header' );
           ?>
-    <header>
-        <!--  <?php 
-            /**
-            * @hooked virtue_post_header_breadcrumbs - 10
-            * @hooked virtue_post_header_title - 20
-            * @hooked virtue_post_header_meta - 30
-            */
-            do_action( 'kadence_single_post_header' );
+          <header>
+            <!--  <?php 
+              /**
+              * @hooked virtue_post_header_breadcrumbs - 10
+              * @hooked virtue_post_header_title - 20
+              * @hooked virtue_post_header_meta - 30
+              */
+              do_action( 'kadence_single_post_header' );
             ?> -->
             <div class="entry-content clearfix" itemprop="description articleBody">
-      <?php
-      do_action( 'kadence_single_post_content_before' );
-      ?>
+            <?php
+              do_action( 'kadence_single_post_content_before' );
+            ?>
+            <p>This is the header section</p>
 
-    </header>
+          </header>
     
-						<?php do_action('epl_property_before_title'); ?>
-						<?php do_action('epl_property_after_title'); ?>	
+          <?php do_action('epl_property_before_title'); ?>
+          <?php do_action('epl_property_after_title'); ?>	
 
-			<div class="entry-col property-pricing-details">
+          <div class="entry-col property-pricing-details">
 
-				<!-- <?php do_action('epl_property_price_before'); ?>
-				<div class="epl-property-meta property-meta pricing">
-					<?php do_action('epl_property_price'); ?>
-				</div>
-				<?php do_action('epl_property_price_after'); ?> -->
-				<div class="epl-property-featured-icons property-feature-icons epl-clearfix">
-					<?php do_action('epl_property_icons'); ?>
-				</div>
-
-			</div>
-		</div>
-	</div>
+          <!-- <?php do_action('epl_property_price_before'); ?>
+          <div class="epl-property-meta property-meta pricing">
+            <?php do_action('epl_property_price'); ?>
+          </div>
+				  <?php do_action('epl_property_price_after'); ?> -->
+          <div class="epl-property-featured-icons property-feature-icons epl-clearfix">
+            <?php do_action('epl_property_icons'); ?>
+          </div>
+			  </div>
+		  </div>
+	  </div>
 
 	<div class="entry-content epl-content epl-clearfix">
 
