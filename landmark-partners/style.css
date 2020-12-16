@@ -721,6 +721,8 @@ margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: top right;
 }
+
+/************ easy property listings ************/
 /*easy property listings styles*/
 
 span.item-suburb, span.item-city, span.item-state, span.item-pcode, span.item-country {
