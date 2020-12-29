@@ -88,7 +88,7 @@
 		<!-- <?php do_action( 'epl_property_featured_image' ); ?> -->
 
 		<div class="epl-tab-wrapper tab-wrapper">
-			<div class="epl-tab-section epl-section-property-details">
+			<div class="epl-tab-section1 epl-section-property-details">
 				<h5 class="epl-tab-title tab-title"><?php echo apply_filters('property_tab_title',__('Property Details', 'easy-property-listings' )); ?></h5>
 				<div class="epl-tab-content tab-content">
 					<div class="epl-property-address property-details">
@@ -106,7 +106,7 @@
 				</div>
 			</div>
 
-			<div class="epl-tab-section epl-section-description">
+			<div class="epl-tab-section1 epl-section-description">
 				<h5 class="epl-tab-title tab-title"><?php echo apply_filters('epl_property_tab_title_description',__('Description', 'easy-property-listings' )); ?></h5>
 				<div class="epl-tab-content tab-content">
 					<!-- heading -->
@@ -124,7 +124,7 @@
 			</div>
 
 			<?php do_action('epl_property_tab_section_before'); ?>
-			<div class="epl-tab-section epl-tab-section-features">
+			<div class="epl-tab-section1 epl-tab-section-features">
 				<?php do_action('epl_property_tab_section'); ?>
 			</div>
 			<?php do_action('epl_property_tab_section_after'); ?>
