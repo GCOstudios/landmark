@@ -74,7 +74,7 @@ get_header(); ?>
           </div> <!-- .main -->
 
 
-          </div>
+          <!-- </div> -->
         </div> <!-- .row -->
       </div> <!-- .container -->
     </section>
