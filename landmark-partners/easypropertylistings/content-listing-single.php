@@ -92,13 +92,11 @@
 				<!-- <h5 class="epl-tab-title tab-title"><?php echo apply_filters('property_tab_title',__('Property Details', 'easy-property-listings' )); ?></h5> -->
 				<div class="epl-tab-content tab-content">
 					<div class="epl-property-address property-details">
-          <?php the_title( '<h1>', '</h1>' ); ?>
-						<h3 class="epl-tab-address tab-address">
-							<?php do_action('epl_property_address'); ?>
-						</h3>
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<?php do_action('epl_property_address'); ?>
 						<?php do_action('epl_property_land_category'); ?>
 						<div class="tab-price">
-              <h2>For Sale</h2>
+              <h2 class="sale-title">For Sale</h2>
               <?php do_action('epl_property_price_content'); ?>
             </div>
 						<?php do_action('epl_property_commercial_category'); ?>
@@ -114,9 +112,9 @@
 				<!-- <h5 class="epl-tab-title tab-title"><?php echo apply_filters('epl_property_tab_title_description',__('Description', 'easy-property-listings' )); ?></h5> -->
 				<div class="epl-tab-content tab-content">
 					<!-- heading -->
-					<h2 class="entry-title"><?php do_action('epl_property_heading'); ?></h2>
+					<!-- <h2 class="entry-title"><?php // do_action('epl_property_heading'); ?></h2>
 
-					<h3 class="secondary-heading"><?php do_action('epl_property_secondary_heading'); ?></h3>
+					<h3 class="secondary-heading"><?php // do_action('epl_property_secondary_heading'); ?></h3> -->
 					<?php
 						do_action('epl_property_content_before');
 
