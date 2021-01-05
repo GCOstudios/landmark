@@ -312,6 +312,8 @@ function my_property_filter($query) {
 }
 add_action( 'pre_get_posts', 'my_property_filter' , 20  );
 
+define('EPL_PROPERTY_SLUG', 'properties');
+
 
 function get_hansel_and_gretel_breadcrumbs()
 {
