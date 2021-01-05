@@ -89,14 +89,18 @@
 
 		<div class="epl-tab-wrapper tab-wrapper">
 			<div class="epl-tab-section1 epl-section-property-details">
-				<h5 class="epl-tab-title tab-title"><?php echo apply_filters('property_tab_title',__('Property Details', 'easy-property-listings' )); ?></h5>
+				<!-- <h5 class="epl-tab-title tab-title"><?php echo apply_filters('property_tab_title',__('Property Details', 'easy-property-listings' )); ?></h5> -->
 				<div class="epl-tab-content tab-content">
 					<div class="epl-property-address property-details">
+          <?php the_title( '<h1>', '</h1>' ); ?>
 						<h3 class="epl-tab-address tab-address">
 							<?php do_action('epl_property_address'); ?>
 						</h3>
 						<?php do_action('epl_property_land_category'); ?>
-						<div class="tab-price"><?php do_action('epl_property_price_content'); ?></div>
+						<div class="tab-price">
+              <h2>For Sale</h2>
+              <?php do_action('epl_property_price_content'); ?>
+            </div>
 						<?php do_action('epl_property_commercial_category'); ?>
 					</div>
 					<div class="epl-property-meta property-meta">
@@ -107,7 +111,7 @@
 			</div>
 
 			<div class="epl-tab-section1 epl-section-description">
-				<h5 class="epl-tab-title tab-title"><?php echo apply_filters('epl_property_tab_title_description',__('Description', 'easy-property-listings' )); ?></h5>
+				<!-- <h5 class="epl-tab-title tab-title"><?php echo apply_filters('epl_property_tab_title_description',__('Description', 'easy-property-listings' )); ?></h5> -->
 				<div class="epl-tab-content tab-content">
 					<!-- heading -->
 					<h2 class="entry-title"><?php do_action('epl_property_heading'); ?></h2>
