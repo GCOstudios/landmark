@@ -822,6 +822,30 @@ a:focus {
   border-right: 0;
 }
 
+.single-property .epl-property-single h1.entry-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 30px;
+  line-height: 1;
+  color: #122c45;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.single-property span.item-suburb,
+.single-property span.item-city,
+.single-property .item-state,
+.single-property span.item-pcode, span.item-country {
+  display: inline;
+  font-size: 20px;
+  color: #555555;
+  margin-right: 2px;
+}
+
+.single-property .epl-property-single .tab-content h2.sale-title {
+  font-family: "proxima_novaregular", "Helvetica Neue", sans-serif !important;
+  font-size: 20px;
+}
+
 span.item-suburb,
 span.item-city,
 span.item-state,
