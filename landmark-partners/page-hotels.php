@@ -6,11 +6,14 @@ Template Name: Custom Hotels
 * @hooked virtue_page_title - 20
 */
   // do_action('kadence_page_title_container');
+  $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 ?>
 
 <div id="property-banner">
-  <div class="banner-container">
-    <?php the_post_thumbnail(); ?>
+  <div style="background-image: url('<?php echo $backgroundImg[0]; ?>');" class="banner-container">
+    <?php
+      // the_post_thumbnail();
+    ?>
   </div><!-- .banner-container -->
 </div><!-- #property-banner -->
 
