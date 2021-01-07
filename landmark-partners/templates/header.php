@@ -16,9 +16,9 @@ if(isset($virtue_premium['primary_sticky']) && $virtue_premium['primary_sticky']
             if($virtue_premium['logo_layout'] == 'logocenter') {$logocclass = 'col-md-12'; $menulclass = 'col-md-12';} 
             else if($virtue_premium['logo_layout'] == 'logohalf') {$logocclass = 'col-md-6'; $menulclass = 'col-md-6';}
             else if($virtue_premium['logo_layout'] == 'logowidget') {$logocclass = 'col-md-4'; $menulclass = 'col-md-12';}
-            else {$logocclass = 'col-md-4'; $menulclass = 'col-md-8';}
+            else {$logocclass = 'col-md-3'; $menulclass = 'col-md-9';}
           }
-          else {$logocclass = 'col-md-4'; $menulclass = 'col-md-8';} ?>
+          else {$logocclass = 'col-md-3'; $menulclass = 'col-md-9';} ?>
   <div class="container">
     <div class="row">
           <div class="<?php echo esc_attr($logocclass); ?> clearfix kad-header-left">
