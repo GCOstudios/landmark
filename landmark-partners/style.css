@@ -25,7 +25,7 @@ p {
 }*/
 
 img.kad-standard-logo {
-  width: 270px;
+  width: 250px;
 }
 .kad-topbar-left .topbar_social,
 .kad-topbar-left .topbarmenu ul,
@@ -844,6 +844,84 @@ a:focus {
 .single-property .epl-property-single .tab-content h2.sale-title {
   font-family: "proxima_novaregular", "Helvetica Neue", sans-serif !important;
   font-size: 20px;
+}
+
+.page-template-page-hotels #property-banner {
+  margin-top: 0;
+}
+
+.page-template-page-hotels .banner-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.page-template-page-hotels h1 {
+  margin-bottom: 20px;
+}
+
+.page-template-page-hotels h2,
+.page-template-page-hotels h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.page-template-page-hotels h1 {
+  font-family: 'proxima_novaregular';
+  text-transform: capitalize;
+}
+
+.page-template-page-hotels h2 {
+  /* font-family: 'proxima_novaregular' !important; */
+}
+
+.page-template-page-hotels h3 {
+  font-family: 'proxima_novaregular';
+}
+
+.page-template-page-hotels p {
+  font-size: 18px;
+  color: #545454;
+  line-height: 1.5;
+}
+
+.page-template-page-hotels .cta-btn {
+  background: #bf9d70;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 13px 20px 5px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.page-template-page-hotels .cta-btn:focus,
+.page-template-page-hotels .cta-btn:hover {
+  background: #8d7452;
+}
+
+.page-template-page-hotels .kt-excerpt-readmore {
+  display: block;
+  background: #bf9d70;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-top: 15px;
+  max-width: 135px;
+  padding: 13px 20px 5px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.page-template-page-hotels .kt-excerpt-readmore:focus,
+.page-template-page-hotels .kt-excerpt-readmore:hover {
+  background: #8d7452;
+}
+
+.page-template-page-hotels .featured-hotels {
+  margin-bottom: 100px;
 }
 
 span.item-suburb,
