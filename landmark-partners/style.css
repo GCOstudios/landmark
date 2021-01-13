@@ -932,6 +932,21 @@ a:focus {
   margin-bottom: 100px;
 }
 
+.custom-flex {
+  display: flex;
+}
+
+.page-template-page-hotels .featured-item {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.page-template-page-hotels .featured-item .kt-excerpt-readmore {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
 span.item-suburb,
 span.item-city,
 span.item-state,
