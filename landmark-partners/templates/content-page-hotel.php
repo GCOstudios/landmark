@@ -23,12 +23,12 @@
   <section class="featured-hotels">
     <h2>Featured Hotels</h2>
     <div class="parent-container">
-      <div class="row">
+      <div class="row custom-flex">
         <?php
           while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
           <div class="col-md-4 featured-item">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(360, 251) ); ?></a>
             <?php
               the_title('<h3>','</h3>');
               the_excerpt();
