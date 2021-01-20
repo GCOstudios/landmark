@@ -11,7 +11,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 get_header(); ?>
-  <div id="primary" class="site-content content-area epl-single-default <?php echo epl_get_active_theme_name(); ?>">
+  <div id="primary" class="site-content content-area epl-single-default <?php echo epl_get_active_theme_name(); if (has_term('hotels', 'tax_feature')) { echo ' single-hotel'; } ?>">
  	
     <section class="content">
       <?php if ( is_active_sidebar( 'single-property-banner' ) ) : ?>
