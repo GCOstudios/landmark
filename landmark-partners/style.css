@@ -850,7 +850,8 @@ a:focus {
   margin-top: 0;
 }
 
-.page-template-page-hotels .banner-container {
+.page-template-page-hotels .banner-container,
+.single-hotel .banner-container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -946,6 +947,8 @@ a:focus {
   bottom: 0;
   left: 15px;
 }
+
+
 
 span.item-suburb,
 span.item-city,
