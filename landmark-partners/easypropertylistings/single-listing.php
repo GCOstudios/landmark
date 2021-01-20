@@ -20,6 +20,12 @@ get_header(); ?>
             <?php dynamic_sidebar( 'single-property-banner' ); ?>
           </div><!-- .banner-container -->
         </div><!-- #property-banner -->
+      <?php elseif(has_term('hotels', 'tax_feature')) : ?>
+        <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+        <div id="property-banner">
+          <div style="background-image: url('<?php echo $backgroundImg[0]; ?>');" class="banner-container">
+          </div><!-- .banner-container -->
+        </div><!-- #property-banner -->
       <?php endif; ?>
 
       <?php 
