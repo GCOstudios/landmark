@@ -7,6 +7,11 @@ function landmark_partners_enqueue_styles() {
 }
 
 add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+    add_image_size( 'hotel-thumb', 360, 251, true ); // (cropped)
+}
  
 function my_custom_dashboard_widgets() {
 global $wp_meta_boxes;
