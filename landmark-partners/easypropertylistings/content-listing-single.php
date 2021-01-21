@@ -125,11 +125,20 @@
 				</div>
 			</div>
 
-			<?php do_action('epl_property_tab_section_before'); ?>
-			<div class="epl-tab-section1 epl-tab-section-features">
-				<?php do_action('epl_property_tab_section'); ?>
-			</div>
-			<?php do_action('epl_property_tab_section_after'); ?>
+      <?php if (has_term('hotels', 'tax_feature')) {
+        // we do nothing
+      } else {
+        do_action('epl_property_tab_section_before'); ?>
+
+        <div class="epl-tab-section1 epl-tab-section-features">
+				  <?php do_action('epl_property_tab_section'); ?>
+			  </div>
+      <?php
+        do_action('epl_property_tab_section_after');
+        }
+      ?>
+
+
 
 			<!-- <h4>Property Gallery</h4> -->
 			<?php do_action( 'epl_property_gallery' ); ?>
