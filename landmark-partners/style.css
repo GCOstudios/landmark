@@ -570,11 +570,17 @@ article.entry-content {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 #ktsidebar .sidebar {
   background: #fff;
   box-shadow: 0 0 3px #ccc;
   padding: 15px;
 }
+
+#ktsidebar .sidebar hr {
+  display: none;
+}
+
 .staff-content {
   padding: 20px;
 }
@@ -820,6 +826,7 @@ a:focus {
 .single-property .tab-content {
   border-left: 0;
   border-right: 0;
+  border: 0;
 }
 
 .single-property .epl-property-single h1.entry-title {
@@ -834,16 +841,39 @@ a:focus {
 .single-property span.item-suburb,
 .single-property span.item-city,
 .single-property .item-state,
-.single-property span.item-pcode, span.item-country {
+.single-property span.item-pcode, 
+.single-property span.item-country {
   display: inline;
   font-size: 20px;
   color: #555555;
   margin-right: 2px;
 }
 
-.single-property .epl-property-single .tab-content h2.sale-title {
+.single-property .epl-property-single .tab-content h2.sale-title,
+.single-property .epl-property-single .tab-content h2 {
   font-family: "proxima_novaregular", "Helvetica Neue", sans-serif !important;
   font-size: 20px;
+  text-transform: capitalize;
+  color: #112b44;
+}
+
+.custom-space {
+  position: relative;
+}
+
+.custom-space::before {
+  content: '';
+  background-color: #d6d6d6;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.widget-property {
+  margin-bottom: 30px;
 }
 
 .page-template-page-hotels #property-banner {
@@ -891,7 +921,8 @@ a:focus {
   line-height: 1.5;
 }
 
-.page-template-page-hotels .cta-btn {
+.page-template-page-hotels .cta-btn,
+.custom-btn-container a {
   display: inline-block;
   background: #bf9d70;
   color: white;
@@ -903,7 +934,9 @@ a:focus {
 }
 
 .page-template-page-hotels .cta-btn:focus,
-.page-template-page-hotels .cta-btn:hover {
+.page-template-page-hotels .cta-btn:hover,
+.custom-btn-container a:focus,
+.custom-btn-container a:hover {
   background: #8d7452;
 }
 
