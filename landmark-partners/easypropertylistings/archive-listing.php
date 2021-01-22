@@ -10,30 +10,32 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-get_header(); ?>
+get_header();?>
 
 <section id="primary" class="site-content content epl-archive-default <?php echo epl_get_active_theme_name(); ?>">
-<?php if ( is_active_sidebar( 'property-banner' ) ) : ?>
-		 <div id="property-banner">
-        <div class="banner-container">
-            <?php dynamic_sidebar( 'property-banner' ); ?>
-        </div><!-- .widget-area -->
-    </div><!-- #secondary -->
-<?php endif; ?>
+
+	<?php if ( is_active_sidebar( 'property-banner' ) ) : ?>
+		<div id="property-banner">
+			<div class="banner-container">
+				<?php dynamic_sidebar( 'property-banner' ); ?>
+			</div><!-- .widget-area -->
+		</div><!-- #secondary -->
+	<?php endif; ?>
+
 	<div id="content" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 			<div class="loop pad">
 				<header class="archive-header entry-header loop-header">
 					<h4 class="archive-title loop-title">
 						<?php do_action( 'epl_the_archive_title' ); ?>
 					</h4>
-			<?php 
-   if(function_exists('get_hansel_and_gretel_breadcrumbs')): 
-      echo get_hansel_and_gretel_breadcrumbs();
-   endif;
-?>
+
+					<?php 
+						if(function_exists('get_hansel_and_gretel_breadcrumbs')): 
+								echo get_hansel_and_gretel_breadcrumbs();
+						endif;
+					?>
 				</header>
 
 				<div class="entry-content loop-content <?php echo epl_template_class( 'default', 'archive' ); ?>">
