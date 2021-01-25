@@ -82,7 +82,7 @@ img.kad-standard-logo {
   margin-right: 20px;
 }
 #kad-banner .kad-header-right .topbar_social ul li:last-child {
-  margin-right: 0;
+  margin-right: 15px;
 }
 #kad-banner .kad-header-right .topbar_social ul li a {
   font-size: 20px;
@@ -1101,7 +1101,7 @@ h4.archive-title.loop-title {
 .epl-property-blog .property-box-right .cta-buttons .cta-btn {
   background: #bf9d70;
   color: white;
-  padding: 25px 30px 16px 40px;
+  padding: 25px 30px 16px 48px;
   position: relative;
   text-transform: uppercase;
   transition: 0.3s;
@@ -1120,7 +1120,7 @@ h4.archive-title.loop-title {
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   top: 50%;
-  left: 14px;
+  left: 18px;
   transform: translateY(-50%);
 }
 
@@ -1130,9 +1130,12 @@ h4.archive-title.loop-title {
 }
 
 .epl-property-blog .property-box-right .cta-buttons .pdf-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #000000;
-  margin-right: 20px;
-  padding: 8px 30px 0 35px;
+  height: 100%;
+  padding: 8px 30px 0 48px;
   position: relative;
   text-transform: uppercase;
   transition: 0.3s;
@@ -1140,7 +1143,7 @@ h4.archive-title.loop-title {
 
 .epl-property-blog .property-box-right .cta-buttons .pdf-link:focus,
 .epl-property-blog .property-box-right .cta-buttons .pdf-link:hover {
-  color: #8e8181;
+  background-color: #e7e7e7;
 }
 
 .epl-property-blog .property-box-right .cta-buttons .pdf-link::before {
@@ -1156,7 +1159,7 @@ h4.archive-title.loop-title {
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 18px;
   transform: translateY(-50%);
 }
 
